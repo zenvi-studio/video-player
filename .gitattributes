@@ -1,0 +1,27 @@
+*           text=auto eol=lf
+*.ts        text eol=lf
+*.js        text eol=lf
+*.mjs       text eol=lf
+*.cjs       text eol=lf
+*.json      text eol=lf
+*.css       text eol=lf
+*.html      text eol=lf
+*.md        text eol=lf
+*.yml       text eol=lf
+*.yaml      text eol=lf
+*.bat       text eol=crlf
+*.cmd       text eol=crlf
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.webp      binary
+*.ico       binary
+*.mp4       binary
+*.mp3       binary
+*.woff      binary
+*.woff2     binary
+*.ttf       binary
+dist/*      -diff
+package-lock.json text eol=lf
+*.ts        diff=typescript
