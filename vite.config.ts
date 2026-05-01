@@ -1,7 +1,7 @@
 /// <reference types="vite" />
-import { resolve } from 'path'
-import { defineConfig, esmExternalRequirePlugin } from 'vite'
-import dts from 'vite-plugin-dts'
+import { resolve } from "path";
+import { defineConfig, esmExternalRequirePlugin } from "vite";
+import dts from "vite-plugin-dts";
 
 export default defineConfig({
     plugins: [
@@ -26,5 +26,10 @@ export default defineConfig({
                 },
             },
         },
+        minify: false
     },
-})
+    root: ".",
+    server: {
+        open: "./demo/index.html"
+    }
+});
